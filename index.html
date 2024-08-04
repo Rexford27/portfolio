@@ -1,249 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="catalog_and_content">
+    <div class="catalog" id="catalog">
+      <!-- Catalog buttons -->
+      <button class="catalog_btn">
+        <input class="toggle_btn" type="checkbox" value="false" onclick="toggle_catalog_checkbox(this)" />
+        <span class="catalog_btn_txt">Home</span>
+        <span class="catalog_btn_category"></span>
+        <span class="catalog_btn_year">2005</span>
+      </button>
 
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-
-    
-  </head>
-
-  <body>
-    <div class="catalog_and_content"> <!-- container that holds the catalog list and content | import because it allows the contet to be alight to the right side instead of floating down-->
-
-      
-    <div class="catolog" id="catolog"> <!-- container that holds the list of the catalog items-->
-
-      <!--start of portfolio catalog items-->
-
-
-      <!--catalog btn are the clickable portfolio items-->
-    
-      <button class="catolog_btn" ><!--start of button catogroy-->
-        <div class="btn_n_text_n_catogory"><!--container that holds the checkbox & item name and catogory of the item-->
-          <div class="btn_n_txt"><!--container that holds the checkbox & item name-->
-            <input class="toggle_btn" type="checkbox"  value="false"  onclick="toggle_catalog_checkbox(this)"oggle_catalog_checkbox(this)" /><!-- checkbox for when the button is clicked and active-->
-            <span class="catalog_btn_txt">Home</span><!--item name-->
-          </div><!-- end of the container that holds the checkbox & item name-->
-          <p class="catalog_btn_catagory"><!--blank--></p><!--item catogory-->
-        </div><!-- end of the container that holds the checkbox/name and catogory of the item-->
-        <span class="catalog_btn_year">2005</span><!--year-->
-      </button><!--end of start of button catogroy-->
-
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox"  value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Photography</span>
-          </div>
-          <p class="catalog_btn_catagory"><!--blank--></p>
-        </div>
+      <button class="catalog_btn">
+        <input class="toggle_btn" type="checkbox" value="false" onclick="toggle_catalog_checkbox(this)" />
+        <span class="catalog_btn_txt">Photography</span>
+        <span class="catalog_btn_category"></span>
         <span class="catalog_btn_year">2018-2024</span>
       </button>
 
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project cars</span>
-          </div>
-          <p class="catalog_btn_catagory">| Godot</p>
-        </div>
-        <span class="catalog_btn_year">2018</span>
+      <button class="catalog_btn">
+        <input class="toggle_btn" type="checkbox" value="false" onclick="toggle_catalog_checkbox(this)" />
+        <span class="catalog_btn_txt">Project Crash</span>
+        <span class="catalog_btn_category">Godot</span>
+        <span class="catalog_btn_year">2028</span>
       </button>
 
-
-    <!--gg-->
-    <button class="catolog_btn" >
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Bronx</span>
-          </div>
-          <p class="catalog_btn_catagory">| Photoshop</p>
-        </div>
-        <span class="catalog_btn_year">2018</span>
+      <button class="catalog_btn">
+        <input class="toggle_btn" type="checkbox" value="false" onclick="toggle_catalog_checkbox(this)" />
+        <span class="catalog_btn_txt">Project Crash</span>
+        <span class="catalog_btn_category">Godot Engine</span></span>
+        <span class="catalog_btn_year">2028</span>
       </button>
 
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Utopia</span>
-          </div>
-          <p class="catalog_btn_catagory">| GIMP</p>
-        </div>
-        <span class="catalog_btn_year">2018</span>
+      <button class="catalog_btn">
+        <input class="toggle_btn" type="checkbox" value="false" onclick="toggle_catalog_checkbox(this)" />
+        <span class="catalog_btn_txt">Project Crash</span>
+        <span class="catalog_btn_category">Python</span></span>
+        <span class="catalog_btn_year">2028</span>
       </button>
-
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Aurora</span>
-          </div>
-          <p class="catalog_btn_catagory">| Unity</p>
-        </div>
-        <span class="catalog_btn_year">2024</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Zenith</span>
-          </div>
-          <p class="catalog_btn_catagory">| Unreal Engine</p>
-        </div>
-        <span class="catalog_btn_year">2024</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Nexus</span>
-          </div>
-          <p class="catalog_btn_catagory">| CryEngine</p>
-        </div>
-        <span class="catalog_btn_year">2023</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Quantum</span>
-          </div>
-          <p class="catalog_btn_catagory">| MySQL</p>
-        </div>
-        <span class="catalog_btn_year">2022</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Infinity</span>
-          </div>
-          <p class="catalog_btn_catagory">| PostgreSQL</p>
-        </div>
-        <span class="catalog_btn_year">2020</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Genesis</span>
-          </div>
-          <p class="catalog_btn_catagory">| Zoom</p>
-        </div>
-        <span class="catalog_btn_year">2019</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Atlas</span>
-          </div>
-          <p class="catalog_btn_catagory">| Dropbox</p>
-        </div>
-        <span class="catalog_btn_year">2018</span>
-      </button>
-
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Phoenix</span>
-          </div>
-          <p class="catalog_btn_catagory">| Scratch</p>
-        </div>
-        <span class="catalog_btn_year">2017</span>
-      </button>
-
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Eclipse</span>
-          </div>
-          <p class="catalog_btn_catagory">| Amazon</p>
-        </div>
-        <span class="catalog_btn_year">2016</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Horizon</span>
-          </div>
-          <p class="catalog_btn_catagory">| Scratch</p>
-        </div>
-        <span class="catalog_btn_year">2015</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Titan</span>
-          </div>
-          <p class="catalog_btn_catagory">| Godot</p>
-        </div>
-        <span class="catalog_btn_year">2014</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Luminary</span>
-          </div>
-          <p class="catalog_btn_catagory">| Scratch</p>
-        </div>
-        <span class="catalog_btn_year">2013</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt"> Project Catalyst</span>
-          </div>
-          <p class="catalog_btn_catagory">| PeaZip</p>
-        </div>
-        <span class="catalog_btn_year">2012</span>
-      </button>
-      <button class="catolog_btn">
-        <div class="btn_n_text_n_catogory">
-          <div class="btn_n_txt">
-            <input class="toggle_btn" type="checkbox" value="false"  onclick="toggle_catalog_checkbox(this)" />
-            <span class="catalog_btn_txt">Project Velocity</span>
-          </div>
-          <p class="catalog_btn_catagory">| Godot</p>
-        </div>
-        <span class="catalog_btn_year">2011</span>
-      </button>
-
-    </div> <!-- container that holds the list of the catalog items-->
-
-    <!--content area to right-->
-    <div class="content_section"> <!--container that holds the content section-->
-
-        <div class="content_canvas" id="content_canvas">
-          <iframe src="https://giphy.com/embed/4yB0a4cl33HfBwlESi" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/z1digitalstudio-tech-z1-remotely-4yB0a4cl33HfBwlESi">via GIPHY</a></p>
-            <!--<p class="content_canvas_description">made by rexford</p>-->
-        </div>
 
     </div>
-
-</div>
-
-<script src="script.js"></script>
-
-
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
