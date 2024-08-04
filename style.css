@@ -27,7 +27,12 @@
   margin-bottom: 10%;
   margin-left: 10%;
   background-color: rgba(255, 255, 255, 0);
+  transition: 0.2s;
 }
+
+
+/* MOBILE */
+
 
 .catalog_btn {
   display: flex;
@@ -46,6 +51,8 @@
   height: 50px;
   transition-duration: 0.2s;
 }
+
+
 
 .catalog_btn:hover:not(:disabled) {
   background-color: rgba(255, 255, 255, 0.135);
@@ -132,4 +139,16 @@
   background-color: transparent;
   position: relative;
   top: 850px;
+}
+
+@media (max-width:800px){
+  .catalog {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+  }
+  .catalog_btn{
+    width: 100vw;
+  }
+
 }
